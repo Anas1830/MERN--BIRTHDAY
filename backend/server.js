@@ -12,9 +12,9 @@ const cors = require('cors')
 const app = express();
 dotenv.config();
 connectDB();
-
-const PORT = process.env.PORT || 5000;
 app.use(cors())
+const PORT = process.env.PORT || 5000;
+
 
 app.use(bodyParser.json())
 app.use('/api',router)
